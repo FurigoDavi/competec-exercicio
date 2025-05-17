@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner aula = new Scanner (System.in);
+	    
+	    System.out.println("Insira quantos computadores há no lab 1: ");
+	    int c1 = aula.nextInt();
+	    System.out.println("Insira quanto alunos há no lab 1: ");
+	    int a1 = aula.nextInt();
+	    
+	    System.out.println("Insira quantos computadores há no lab 2: ");
+	    int c2 = aula.nextInt();
+	    System.out.println("Insira quanto alunos há no lab 2: ");
+	    int a2 = aula.nextInt();
+	    
+	    System.out.println("Insira quantos computadores há no lab 3: ");
+	    int c3 = aula.nextInt();
+	    System.out.println("Insira quanto alunos há no lab 3: ");
+	    int a3 = aula.nextInt();
+	    
+	    System.out.println("Insira quantos computadores há no lab 4: ");
+	    int c4 = aula.nextInt();
+	    System.out.println("Insira quanto alunos há no lab 4: ");
+	    int a4 = aula.nextInt();
+	    
+	    float aa2 = a2 % 2;
+	    float aa3 = c3 / 2;
+	    float aa4 = a4 % 10;
+	    float nc = c1 + c2 + c3 + c4;
+	    float na = a1 + a2 + a3 + a4;
+	    
+	    if (a1 <= 40 && aa2 == 0 && aa3 < a3 && aa4 == 7 && nc >= na){
+	        System.out.println("HABEMUS AULA!!!!");
+	    }
+	    else{
+	        System.out.println("Fica pra proxima :( ");
+	    }
+	    
+		
+	}
+}
