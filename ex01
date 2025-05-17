@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.println("Insira quanto dinheiro Itu levou: ");
+		float di = scanner.nextFloat();
+		
+		System.out.println("Insira quanto dinheiro Caio levou: ");
+		float dc = scanner.nextFloat();
+		
+		System.out.println("Insira o preço de uma barrinha: ");
+		float p = scanner.nextFloat();
+		
+		System.out.println("Insira quantas barrinhas deverão ser compradas: ");
+		int n = scanner.nextInt();
+		
+		float dindin = di + dc;
+		float preco = p * n;
+		float x = preco - dindin;
+		
+		if (x <= 0){
+		    System.out.println("Não precisa enviar dinheiro");
+		}
+		else{
+		System.out.println("Rayssa deverá enivar: R$" + x);
+		}
+		
+	}
+}
