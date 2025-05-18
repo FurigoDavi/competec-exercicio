@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner csa = new Scanner (System.in);
+	    
+	    System.out.println("Qual o comprimento do salão?: ");
+	    double C = csa.nextDouble();
+	    
+	    System.out.println("Qual a largura do salão?: ");
+	    double L = csa.nextDouble();
+	    
+	    System.out.println("Quantos convidados tem na festa?: ");
+	    int N = csa.nextInt();
+	    
+	    double A = C * L;
+	    
+	    if (A / 2 >= N){
+	        System.out.println("JÁ É É INTEEEEEEEEER");
+	    }
+	    else{
+	        System.out.println("Santa Rita realmente ficou pequena");
+	    }
+	}
+}
