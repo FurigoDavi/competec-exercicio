@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner leia = new Scanner (System.in);
+	    
+	    System.out.println("Insira o primeiro número(M): ");
+	    double M = leia.nextDouble();
+	    
+	    System.out.println("Insira o segundo número(N): ");
+	    double N = leia.nextDouble();
+	    
+	    System.out.println("Insira a operação utilizada: ");
+	    System.out.println("1- Adição (M + N) ");
+	    System.out.println("2- Subtração (M - N) ");
+	    System.out.println("3- Multiplicação (M * N) ");
+	    System.out.println("4- Divisão (M / N) ");
+	    double ope = leia.nextDouble();
+	    
+	    double resultado = 0;
+	    
+	    if (ope == 1){
+	        resultado = M + N;
+	    }
+	    else if (ope == 2){
+	        resultado = M - N;
+	    }
+	    else if (ope == 3){
+	        resultado = M * N;
+	    }
+	    else if (ope == 4){
+	        resultado = M / N;
+	    }
+	    
+		System.out.println("O resultado é: " + resultado);
+	}
+}
