@@ -28,11 +28,11 @@ public class Main
 	    
 	    float aa2 = a2 % 2;
 	    float aa3 = c3 / 2;
-	    float aa4 = a4 % 10;
+	    
 	    float nc = c1 + c2 + c3 + c4;
 	    float na = a1 + a2 + a3 + a4;
 	    
-	    if (a1 <= 40 && aa2 == 0 && aa3 < a3 && aa4 == 7 && nc >= na){
+	    if (a1 <= 40 && aa2 == 0 && aa3 < a3 && a4 % 10 == 7 && nc >= na){
 	        System.out.println("HABEMUS AULA!!!!");
 	    }
 	    else{
