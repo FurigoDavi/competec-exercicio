@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner crb = new Scanner (System.in);
+	    
+	    System.out.println("Quanto tempo o aluno 1 demora: ");
+	    int t1 = crb.nextInt();
+	    
+	    System.out.println("Quanto tempo o aluno 2 demora: ");
+	    int t2 = crb.nextInt();
+	    
+	    System.out.println("Quanto tempo o aluno 3 demora: ");
+	    int t3 = crb.nextInt();
+	    
+	    System.out.println("Quanto tempo o aluno 4 demora: ");
+	    int t4 = crb.nextInt();
+	    
+	    System.out.println("Quanto tempo o aluno 5 demora: ");
+	    int t5 = crb.nextInt();
+	    
+	    int tr1 = t1 * 5;
+	    int tr2 = t2 * t2;
+	    int tr3 = 0;
+	    int pi3 = t3 % 2;
+	    int tr5 = t5 - t1 * 2;
+	    int maior = tr1;
+	    
+	    if (pi3 == 0){
+	        tr3 = t3 / 2;
+	    }
+	    else{
+	        tr3 = t3 * 2;
+	    }
+	    
+	    int tr4 = tr3 * 3;
+	    
+	    if (tr2 > maior){
+	        maior = tr2;
+	    }
+	    else if (tr3 > maior){
+	        maior = tr3;
+	    }
+	    else if (tr4 > maior){
+	        maior = tr4;
+	    }
+	    else if (tr5 > maior){
+	        maior = tr5;
+	    }
+	    System.out.println("O maior tempo real é: " + maior);
+	}
+}
