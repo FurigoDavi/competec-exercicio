@@ -1,0 +1,94 @@
+//exemplo01
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    
+		System.out.println("Digite seu nome: ");
+		String nome = scan.nextLine();
+		
+		System.out.println("\nSeu nome é: " + nome);
+	}
+}
+-------------------------------------------------------
+//exemplo02
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Digite seu nome: ");
+		String nome = leia.nextLine();
+		
+		int tamanho = nome.length();
+		
+		System.out.println("Olá, " + nome + ", seu nome tem " + tamanho + " caracteres");
+	}
+}
+-------------------------------------------------------
+//exemplo03
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner leia = new Scanner(System.in);
+	    
+		System.out.println("Digite a palavra secreta: "); //a palavra secreta é "BATATA"
+		String senha = leia.nextLine();
+		
+		String PalavraSecreta = "BATATA";
+		
+		if (senha.equals(PalavraSecreta)){
+		    System.out.println("Parabéns, você acertou! ");
+		}
+		else if (!senha.equals(PalavraSecreta)){
+		    System.out.println("Que pena, você errou!");
+		}
+		
+	}
+}
+-------------------------------------------------------
+//exemplo04
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner leia = new Scanner(System.in);
+	    
+		System.out.println("Digite uma frase: ");
+		String frase = leia.nextLine();
+		
+		String[]fraseSemEspacoArray = frase.split(" "); //será separados pelos espaços vazios ""
+		
+		String fraseSemEspaco = "";
+		String fraseReversa = "";
+		
+		for(int i = 0; i < fraseSemEspacoArray.length; i++){
+		    fraseSemEspaco += fraseSemEspacoArray[i];
+		}
+		System.out.println("Frase sem espaço \n" + fraseSemEspaco);
+		
+		for(int i = fraseSemEspaco.length() - 1; i >= 0; i--){
+		    fraseReversa += fraseSemEspaco.charAt(i);
+		}
+		System.out.println("Frase reversa \n" + fraseReversa);
+		
+		if(fraseSemEspaco.equals(fraseReversa)){
+		    System.out.println("é um palindromo!!");
+		}
+		else{
+		    System.out.println("não");
+		}
+		
+	}
+}
